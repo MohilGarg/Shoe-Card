@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    perspective: 1000%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.3), 0px 0px 50px rgba(0,0,0,0.3);
+    transform-style: preserve-3d;
+}
+
+.shoe{
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+.shoe img{
+    width: 20rem;
+    transition: 1s ease;
+}
+
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to right, rgba(255, 134, 134, 0.7), rgba(11, 53, 95, 0.7));
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.info h1{
+    font-size: 3rem;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.info h3{
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: rgb(61, 61, 61);
+    font-weight: lighter;
+    transition: 1s ease;
+}
+
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    transition: 1s ease;
+}
+
+.sizes button{
+   padding: 0.5rem 2rem;
+   background: none;
+   border: none;
+   box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+   border-radius: 30px;
+   font-weight: bolder;
+   color: #585858;
+   cursor: pointer;
+}
+
+button.dark{
+   background: #585858;
+   color: white;
+}
+
+.purchase{
+    margin-top: 3rem;
+    transition: 1s ease;
+}
+
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgb(150, 4, 4);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+}
